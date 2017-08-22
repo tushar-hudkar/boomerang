@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>boomerang</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <header>
+        <div class="container">
+            <div class="head">
+                <div class="logo">
+                    <img src="img/logo.jpg" alt="">
+                </div>
+                <div class="optimization">
+                    <img src="img/optimization.png">
+                    <h2>PRICE OPTIMIZATION</h2>
+                </div>
+                <div class="commerce">
+                    <div class="profile">
+                        <img src="img/profile.png">
+                        <p>Park Shin hye</p>
+                    </div>
+                    <!--profile-->
+                    <div class="right_logo">
+                        <img src="img/right_logo.png">
+                    </div>
+                    <!--right_logo-->
+                </div>
+                <!--commerce-->
+            </div>
+            <!--head-->
+        </div>
+        <!--container-->
+    </header>
+    <!--###########################graph################################-->
+    <div class="container">
+        <div class="graph">
+            <div class="revenue">
+                <div class="graph-pin">
+                    <div class="graph-head">
+                        <h3>Revenue</h3>
+                        <div class="amount">
+                            <h4><span style="opacity: .5;">$</span> 786,000</h4>
+                            <h5><span class="icon-up-dir"></span>4.01 <span style="font-size: 16px;">%</span></h5>
+                        </div>
+                        <!--amount-->
+                    </div>
+                    <!--graph-head-->
+                    <div class="pin"><img src="img/preview.png"></div>
+                </div>
+                <!--graph-pin-->
+                <div class="quarter">
+                    <div class="select">
+                        <select>
+                            <option value="#">Last Quarter</option>
+                            <option value="#">Last Quarter</option>
+                            <option value="#">Last Quarter</option>
+                            <option value="#" selected>Last Quarter</option>
+                        </select>
+                    </div>
+                    <!--select-->
+                    <div class="graph-pointer">
+                        <div class="overall">
+                            <p><img src="img/overall.png">Overall</p>
+                        </div>
+                        <!--overall-->
+                        <div class="baseline">
+                            <p><img src="img/baseline.png">Baseline</p>
+                        </div>
+                        <!--baseline-->
+                    </div>
+                    <!--graph-pointer-->
+                </div>
+                <!--quarter-->
+                <div id="chart_div"></div>
+            </div>
+            <!--revenue-->
+            <div class="revenue" style="margin-left: 42px;">
+                <div class="graph-pin">
+                    <div class="graph-head">
+                        <h3>Revenue</h3>
+                        <div class="amount">
+                            <h4><span style="opacity: .5;">$</span> 786,000</h4>
+                            <h5><span class="icon-up-dir"></span>4.01 <span style="font-size: 16px;">%</span></h5>
+                        </div>
+                        <!--amount-->
+                    </div>
+                    <!--graph-head-->
+                    <div class="pin"><img src="img/preview.png"></span>
+                    </div>
+                </div>
+                <!--graph-pin-->
+                <div class="quarter">
+                    <div class="select">
+                        <select>
+                            <option value="#">Last Quarter</option>
+                            <option value="#">Last Quarter</option>
+                            <option value="#">Last Quarter</option>
+                            <option value="#" selected>Last Quarter</option>
+                        </select>
+                    </div>
+                    <!--select-->
+                    <div class="graph-pointer">
+                        <div class="overall">
+                            <p><img src="img/overall.png">Overall</p>
+                        </div>
+                        <!--overall-->
+                        <div class="baseline">
+                            <p><img src="img/baseline.png">Baseline</p>
+                        </div>
+                        <!--baseline-->
+                    </div>
+                    <!--graph-pointer-->
+                </div>
+                <!--quarter-->
+                <div id="chart_div2"></div>
+            </div>
+            <!--revenue-->
+        </div>
+        <!--graph-->
+    </div>
+    <!--container-->
+    <!--###########################graph################################-->
+    <div class="container">
+        <table style="float: left;" class="alternate-colors grid" id="sort">
+            <thead>
+                <tr style="height: 39px;">
+                    <th style="width: 200px;">PRICING STRATEGY</th>
+                    <th style="width: 108px;">LAST UPDATE BY</th>
+                    <th style="width: 134px;">SCHEDULE</th>
+                    <th style="width: 194px;">PERFORMANCE &nbsp;<span class="small-heading">(MARGIN)</span></th>
+                    <th style="width: 194px;">PERFORMANCE &nbsp;<span class="small-heading">(REVENUE)</span></th>
+                    <th style="width: 144px;">ACTIONS</th>
+                    <th style="width: 15px; padding: 0px;"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Self Learning Optimization</td>
+                    <td>Tom</td>
+                    <td style="font-size: 12px;"><img src="img/watch.png">12 Mar 2015
+                        <br><span class="status">Present</span></td>
+                    <td>
+                        <table class="under_table">
+                            <tr>
+                                <td class="last-week">
+                                    <span class="under-td">Last Week</span>
+                                    <br><span style="opacity: .6;">$</span><span class="under-td-amount">18,555</span></td>
+                                <td class="up-down green"><span class="icon-up-dir"></span>7.30%</td>
+                            </tr>
+                            <tr>
+                                <td class="last-month"><span class="under-td">Last Month</span>
+                                    <br><span style="opacity: .6;">$</span><span class="under-td-amount">395,456</span></td>
+                                <td class="up-down green"><span class="icon-up-dir"></span>7.30%</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table class="under_table">
+                            <tr>
+                                <td class="last-week"><span class="under-td">Last Week</span>
+                                    <br><span style="opacity: .6;">$</span><span class="under-td-amount">18,456</span></td>
+                                <td class="up-down green"><span class="icon-up-dir"></span>7.30%</td>
+                            </tr>
+                            <tr>
+                                <td class="last-month"><span class="under-td">Last Month</span>
+                                    <br><span style="opacity: .6;">$</span><span class="under-td-amount">78,085</span></td>
+                                <td class="up-down green"><span class="icon-up-dir"></span>3.27%</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td style="vertical-align: middle; padding: 0;  padding-left: 24px;">
+                        <img class="action1" src="img/preview.png">
+                        <img class="action2" src="img/note.png">
+                        <img class="action3" src="img/delete.png">
+                        <img class="action4" src="img/slidedown.png">
+                    </td>
+                    <td class="drag"><span class="icon-list"></span></td>
+                </tr>
+                <tr>
+                    <td>Price test - KVI Pricing</td>
+                    <td>Michael</td>
+                    <td style="font-size: 12px;"><span class="icon-clock"></span>28 Mar 2015 -
+                        <br><span class="status">30 May 2015</span></td>
+                    <td>
+                        <table class="under_table">
+                            <tr>
+                                <td class="last-week"><span class="under-td">Last Week</span>
+                                    <br><span style="opacity: .6;">$</span><span class="under-td-amount">18,456</span></td>
+                                <td class="up-down green"><span class="icon-up-dir"></span>3.30%</td>
+                            </tr>
+                            <tr>
+                                <td class="last-month"><span class="under-td">Last Month</span>
+                                    <br><span style="opacity: .6;">$</span><span class="under-td-amount">47,236</span></td>
+                                <td class="up-down green"><span class="icon-up-dir"></span>5.30%</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table class="under_table">
+                            <tr>
+                                <td class="last-week"><span class="under-td">Last Week</span>
+                                    <br><span style="opacity: .6;">$</span><span class="under-td-amount">18,456</span></td>
+                                <td class="up-down green"><span class="icon-up-dir"></span>7.30%</td>
+                            </tr>
+                            <tr>
+                                <td class="last-month"><span class="under-td">Last Month</span>
+                                    <br><span style="opacity: .6;">$</span><span class="under-td-amount">139,784</span></td>
+                                <td class="up-down green"><span class="icon-up-dir"></span>8.27%</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td style="vertical-align: middle; padding: 0;  padding-left: 24px;">
+                        <img class="action1" src="img/preview.png">
+                        <img class="action2" src="img/note.png">
+                        <img class="action3" src="img/delete.png">
+                        <img class="action4" src="img/slidedown.png">
+                    </td>
+                    <td class="drag"><span class="icon-list"></span></td>
+                </tr>
+                <tr>
+                    <td>Self Learning Optimization</td>
+                    <td>Tom</td>
+                    <td style="font-size: 12px;"><span class="icon-clock"></span>12 Mar 2015
+                        <br><span class="status">Present</span></td>
+                    <td>
+                        <table class="under_table">
+                            <tr>
+                                <td class="last-week">
+                                    <span class="under-td">Last Week</span>
+                                    <br><span style="opacity: .6;">$</span><span class="under-td-amount">18,555</span></td>
+                                <td class="up-down green"><span class="icon-up-dir"></span>7.30%</td>
+                            </tr>
+                            <tr>
+                                <td class="last-month"><span class="under-td">Last Month</span>
+                                    <br><span style="opacity: .6;">$</span><span class="under-td-amount">395,456</span></td>
+                                <td class="up-down green"><span class="icon-up-dir"></span>7.30%</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table class="under_table">
+                            <tr>
+                                <td class="last-week"><span class="under-td">Last Week</span>
+                                    <br><span style="opacity: .6;">$</span><span class="under-td-amount">18,456</span></td>
+                                <td class="up-down green"><span class="icon-up-dir"></span>7.30%</td>
+                            </tr>
+                            <tr>
+                                <td class="last-month"><span class="under-td">Last Month</span>
+                                    <br><span style="opacity: .6;">$</span><span class="under-td-amount">78,085</span></td>
+                                <td class="up-down green"><span class="icon-up-dir"></span>3.27%</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td style="vertical-align: middle; padding: 0;  padding-left: 24px;">
+                        <img class="action1" src="img/preview.png">
+                        <img class="action2" src="img/note.png">
+                        <img class="action3" src="img/delete.png">
+                        <img class="action4" src="img/slidedown.png">
+                    </td>
+                    <td class="drag"><span class="icon-list"></span></td>
+                </tr>
+            </tbody>
+        </table>
+        <!--#################view on click########################-->
+        <div class="table-nav">
+            <ul>
+                <li class="nav-active">
+                    <p>DETAILS</p>
+                </li>
+                <li>
+                    <p>GRAPHICAL VIEW</p>
+                </li>
+                <li>
+                    <p>TABULAR VIEW</p>
+                </li>
+            </ul>
+        </div>
+        <div class="table-cont">
+            <div class="details-page details-tab">
+                <div class="details">
+                    <div class="ruleset">
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Pre Ruleset : &nbsp;&nbsp;Default pre-checks</p>
+                        <br>
+                        <br>
+                        <p>Core Strategy : &nbsp;&nbsp;<span style="float: right; font-weight: bold; color: #112040;"> self learning optimization <br> with unit loss guardrail</span></p>
+                        <br>
+                        <br>
+                        <br>
+                        <p>&nbsp;&nbsp;Post Ruleset : &nbsp;&nbsp;<span style="float: right;"> Default post-checks and <br> 99 cent rounding</span></p>
+                    </div>
+                    <div class="strategy">
+                        <p>Core Strategy</p>
+                        <br>
+                        <ul>
+                            <li>Coupon Group Check</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Conversion rate check rule</li>
+                            <br>
+                            <li>SKU Promotion check rule</li>
+                            <li>Coupon group check</li>
+                            <br>
+                            <li>Map Price check rule</li>
+                        </ul>
+                    </div>
+                    <div class="sku-list">
+                        <p>Dynamic SKU list : </p>
+                        <br>
+                        <ul>
+                            <li>Core SKUs Dept 23</li>
+                            <li>Current SKU Count
+                                <br>210</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="graphical-page details-tab">
+                <div class="graph-area">
+                    <div class="performance">
+                        <p>Revenue and Margin performance</p>
+                    </div>
+                    <!--performance-->
+                    <div class="quarter">
+                        <div class="select">
+                            <select>
+                                <option value="#">Revenue</option>
+                                <option value="#">Revenue</option>
+                                <option value="#">Revenue</option>
+                                <option value="#" selected>Revenue</option>
+                            </select>
+                        </div>
+                        <!--select-->
+                        <div class="graph-pointer">
+                            <div class="overall">
+                                <p><img src="img/overall.png">Overall</p>
+                            </div>
+                            <!--overall-->
+                            <div class="baseline">
+                                <p><img src="img/baseline.png">Baseline</p>
+                            </div>
+                            <!--baseline-->
+                        </div>
+                        <!--graph-pointer-->
+                        <!-- <div class="graph-pointer">
+                        <div class="overall">
+                            <p><span class="icon-stop"></span>Overall</p>
+                        </div>
+                        overall
+                        <div class="baseline">
+                            <p><span class="icon-stop"></span>Baseline</p>
+                        </div>
+                        baseline
+                    </div> -->
+                        <!--graph-pointer-->
+                    </div>
+                    <!--quarter-->
+                    <!--#########graph##########-->
+                    <div id="chart_div3"></div>
+                    <!--#########graph##########-->
+                </div>
+            </div>
+            <div class="tabular-page details-tab">
+                <p>Weekly report - 27th Oct (Week 7)</p>
+                <table class="tabular-table">
+                    <tr style="height: 39px;">
+                        <th></th>
+                        <th>LIFT</th>
+                        <th>OPTIMIZER (TEST)</th>
+                        <th>CONTROL (SCALED)</th>
+                    </tr>
+                    <tr style="background-color: #e6eef4; border-bottom: 1px solid #fff;">
+                        <td>SKUs</td>
+                        <td>-</td>
+                        <td class="main-numbers">345</td>
+                        <td class="main-numbers">205</td>
+                    </tr>
+                    <tr style="background-color: #e6eef4; border-bottom: 1px solid #fff;">
+                        <td class="main-highlighter">Revenue</td>
+                        <td class="green"><span class="icon-up-dir"></span>7.30%</td>
+                        <td class="main-numbers">1,746,607 <span style="opacity: .4;">$</span></td>
+                        <td class="main-numbers">1,678,252 <span style="opacity: .4;">$</span></td>
+                    </tr>
+                    <tr style="background-color: #e6eef4; border-bottom: 3px solid #fff;">
+                        <td class="main-highlighter">Margin</td>
+                        <td class="green"><span class="icon-up-dir"></span>5.03%</td>
+                        <td class="main-numbers">565,348 <span style="opacity: .4;">$</span></td>
+                        <td class="main-numbers">528,351 <span style="opacity: .4;">$</span></td>
+                    </tr>
+                    <tr>
+                        <td class="first-coloumn-data">Orders</td>
+                        <td class="red"><span class="icon-down-dir"></span>2.02%</td>
+                        <td class="main-numbers-light">41,606 <span style="opacity: .4;">$</span></td>
+                        <td class="main-numbers-light">43,927 <span style="opacity: .4;">$</span></td>
+                    </tr>
+                    <tr>
+                        <td class="first-coloumn-data">Units</td>
+                        <td class="red"><span class="icon-down-dir"></span>3.80%</td>
+                        <td class="main-numbers-light">74,662 <span style="opacity: .4;">$</span></td>
+                        <td class="main-numbers-light">80,024 <span style="opacity: .4;">$</span></td>
+                    </tr>
+                    <tr style="border-bottom: 3px solid #fff;">
+                        <td class="first-coloumn-data">Product Views</td>
+                        <td class="red"><span class="icon-down-dir"></span>0.00%</td>
+                        <td class="main-numbers-light">61,778 <span style="opacity: .4;">$</span></td>
+                        <td class="main-numbers-light">67,640 <span style="opacity: .4;">$</span></td>
+                    </tr>
+                    <tr>
+                        <td class="first-coloumn-data">Margin rate</td>
+                        <td class="green"><span class="icon-up-dir"></span>160 bps</td>
+                        <td class="main-numbers-light">32.10 <span style="opacity: .4;">%</span></td>
+                        <td class="main-numbers-light">33.07 <span style="opacity: .4;">%</span></td>
+                    </tr>
+                    <tr style="border-bottom: 3px solid #fff;">
+                        <td class="first-coloumn-data">Conversion Rate</td>
+                        <td class="green"><span class="icon-up-dir"></span>42 bps</td>
+                        <td class="main-numbers-light">4.09 <span style="opacity: .4;">%</span></td>
+                        <td class="main-numbers-light">4.05 <span style="opacity: .4;">%</span></td>
+                    </tr>
+                    <tr>
+                        <td class="first-coloumn-data">Revenue per Visit</td>
+                        <td class="green"><span class="icon-up-dir"></span>5.02 %</td>
+                        <td class="main-numbers-light">27.17 <span style="opacity: .4;">$</span></td>
+                        <td class="main-numbers-light">25.82 <span style="opacity: .4;">$</span></td>
+                    </tr>
+                    <tr>
+                        <td class="first-coloumn-data">Margin per Visit</td>
+                        <td class="green"><span class="icon-up-dir"></span>0.02 %</td>
+                        <td class="main-numbers-light">8.72 <span style="opacity: .4;">$</span></td>
+                        <td class="main-numbers-light">8.70 <span style="opacity: .4;">$</span></td>
+                    </tr>
+                    <tr>
+                        <td class="first-coloumn-data">Average Order Value</td>
+                        <td class="green"><span class="icon-up-dir"></span>1.04 %</td>
+                        <td class="main-numbers-light">40.34 <span style="opacity: .4;">$</span></td>
+                        <td class="main-numbers-light">39.76 <span style="opacity: .4;">$</span></td>
+                    </tr>
+                    <tr>
+                        <td class="first-coloumn-data">Average Selling Price</td>
+                        <td class="green"><span class="icon-up-dir"></span>3.00 %</td>
+                        <td class="main-numbers-light">22.48 <span style="opacity: .4;">$</span></td>
+                        <td class="main-numbers-light">21.83 <span style="opacity: .4;">$</span></td>
+                    </tr>
+                    <tr style="background-color: #e6eef4; border-bottom: 1px solid #fff;">
+                        <td class="first-coloumn-data">Net revenue Lift</td>
+                        <td class="red">68,355 <span style="opacity: .4;">$</span></td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr style="background-color: #e6eef4; border-bottom: 1px solid #fff;">
+                        <td class="first-coloumn-data">Net Margin Lift</td>
+                        <td class="green">39,997 <span style="opacity: .4;">$</span></td>
+                        <td class="main-numbers-light">-</td>
+                        <td class="main-numbers-light">-</td>
+                    </tr>
+                </table>
+                <p>IMPACT TO DATE</p>
+                <table class="tabular-table" style="margin-bottom: 28px;">
+                    <tr style="height: 39px;">
+                        <th></th>
+                        <th>LIFT</th>
+                        <th>OPTIMIZER (TEST)</th>
+                        <th>CONTROL (SCALED)</th>
+                    </tr>
+                    <tr style="background-color: #e6eef4; border-bottom: 1px solid #fff;">
+                        <td class="main-highlighter">Revenue</td>
+                        <td class="green"><span class="icon-up-dir"></span>7.30%</td>
+                        <td class="main-numbers">1,746,607 <span style="opacity: .4;">$</span></td>
+                        <td class="main-numbers">1,678,252 <span style="opacity: .4;">$</span></td>
+                    </tr>
+                    <tr style="background-color: #e6eef4; border-bottom: 1px solid #fff;">
+                        <td class="main-highlighter">Margin</td>
+                        <td class="green"><span class="icon-up-dir"></span>5.03%</td>
+                        <td class="main-numbers">565,348 <span style="opacity: .4;">$</span></td>
+                        <td class="main-numbers">528,351 <span style="opacity: .4;">$</span></td>
+                    </tr>
+                    <tr style="background-color: #e6eef4; border-bottom: 1px solid #fff;">
+                        <td class="main-highlighter">PPI</td>
+                        <td class="red"><span class="icon-down-dir"></span>301 bps</td>
+                        <td class="main-numbers">-</td>
+                        <td class="main-numbers">-</td>
+                    </tr>
+                </table>
+            </div>
+            <!--tabular page-->
+        </div>
+        <!--table-cont-->
+        <!--############button################-->
+        <div class="btn">
+            <button class="create"><img src="img/plus.png">Create Strategy</button>
+            <button class="export">Export All Strategy</button>
+            <button class="save">Save</button>
+            <button class="reset">Reset</button>
+        </div>
+        <!--btn-->
+        <!--############button################-->
+    </div>
+    <!--container-->
+    <footer>
+        <div class="container">
+            <div class="powered">
+                <p>Powered by<span style="margin-top: 0px;"><img src="img/right_logo.png"></span></p>
+            </div>
+        </div>
+        <!--container-->
+    </footer>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+    google.load("visualization", "1", {
+        packages: ["corechart"]
+    });
+    google.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+            ['Week', 'Overall', 'Baseline'],
+            ['0', 1000, 400],
+            ['1', 1200, 460],
+            ['2', 1170, 410],
+            ['3', 660, 500],
+            ['4', 1000, 900],
+            ['5', 1170, 870],
+            ['6', 660, 520],
+            ['7', 660, 450],
+            ['8', 1000, 780],
+            ['9', 1170, 1000],
+            ['10', 660, 420],
+            ['11', 1030, 540]
+        ]);
+
+        var options = {
+            // title: 'Company Performance',
+            colors: ['#51d7cc', '#7da2f5'],
+            fontSize: '11px',
+            legend: {
+                position: 'none'
+            },
+            fontName: 'Arial',
+            backgroundColor: {
+                stroke: '#f4f4f4'
+            },
+            hAxis: {
+                title: 'Week',
+                gridlines: {
+                    color: '#f4f4f4',
+                    count: 4
+                },
+                titleTextStyle: {
+                    color: '#d7d7d7',
+                    italic: false
+                },
+                textStyle: {
+                    color: '#d7d7d7',
+                    fontSize: '11px',
+                    italic: false
+                },
+                baselineColor: '#f4f4f4'
+            },
+            vAxis: {
+                title: 'Revenue',
+                minValue: 0,
+                gridlines: {
+                    color: '#f4f4f4',
+                    count: 4
+                },
+                titleTextStyle: {
+                    color: '#d7d7d7',
+                    italic: false
+                },
+                textStyle: {
+                    color: '#d7d7d7',
+                    fontSize: '11px',
+                    italic: false
+                },
+                baselineColor: '#f4f4f4'
+            }
+        };
+
+        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+    }
+    </script>
+    <script type="text/javascript">
+    google.load("visualization", "1", {
+        packages: ["corechart"]
+    });
+    google.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+            ['Week', 'Overall', 'Baseline'],
+            ['0', 1000, 400],
+            ['1', 1200, 460],
+            ['2', 1170, 410],
+            ['3', 660, 500],
+            ['4', 1000, 900],
+            ['5', 1170, 870],
+            ['6', 660, 520],
+            ['7', 660, 450],
+            ['8', 1000, 780],
+            ['9', 1170, 1000],
+            ['10', 660, 420],
+            ['11', 1030, 540]
+        ]);
+
+        var options = {
+            // title: 'Company Performance',
+            colors: ['#51d7cc', '#7da2f5'],
+            fontSize: '11px',
+            legend: {
+                position: 'none'
+            },
+            fontName: 'Arial',
+            backgroundColor: {
+                stroke: '#f4f4f4'
+            },
+            hAxis: {
+                title: 'Week',
+                gridlines: {
+                    color: '#f4f4f4',
+                    count: 4
+                },
+                titleTextStyle: {
+                    color: '#d7d7d7',
+                    italic: false
+                },
+                textStyle: {
+                    color: '#d7d7d7',
+                    fontSize: '11px',
+                    italic: false
+                },
+                baselineColor: '#f4f4f4'
+            },
+            vAxis: {
+                title: 'Revenue',
+                minValue: 0,
+                gridlines: {
+                    color: '#f4f4f4',
+                    count: 4
+                },
+                titleTextStyle: {
+                    color: '#d7d7d7',
+                    italic: false
+                },
+                textStyle: {
+                    color: '#d7d7d7',
+                    fontSize: '11px',
+                    italic: false
+                },
+                baselineColor: '#f4f4f4'
+            }
+        };
+
+        var chart = new google.visualization.AreaChart(document.getElementById('chart_div2'));
+        chart.draw(data, options);
+    }
+    </script>
+    <script type="text/javascript">
+    google.load("visualization", "1", {
+        packages: ["corechart"]
+    });
+    google.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+            ['Week', 'Overall', 'Baseline'],
+            ['0', 1000, 400],
+            ['1', 1200, 460],
+            ['2', 1170, 410],
+            ['3', 660, 500],
+            ['4', 1000, 900],
+            ['5', 1170, 870],
+            ['6', 660, 520],
+            ['7', 660, 450],
+            ['8', 1000, 780],
+            ['9', 1170, 1000],
+            ['10', 660, 420],
+            ['11', 1030, 540]
+        ]);
+
+        var options = {
+            // title: 'Company Performance',
+            colors: ['#51d7cc', '#7da2f5'],
+            fontSize: '11px',
+            legend: {
+                position: 'none'
+            },
+            fontName: 'Arial',
+            backgroundColor: {
+                fill: 'transparent',
+                stroke: '#f4f4f4'
+            },
+            hAxis: {
+                title: 'Week',
+                gridlines: {
+                    color: '#f4f4f4',
+                    count: 4
+                },
+                titleTextStyle: {
+                    color: '#d7d7d7',
+                    italic: false
+                },
+                textStyle: {
+                    color: '#d7d7d7',
+                    fontSize: '11px',
+                    italic: false
+                },
+                baselineColor: '#f4f4f4'
+            },
+            vAxis: {
+                title: 'Revenue',
+                minValue: 0,
+                gridlines: {
+                    color: '#f4f4f4',
+                    count: 4
+                },
+                titleTextStyle: {
+                    color: '#d7d7d7',
+                    italic: false
+                },
+                textStyle: {
+                    color: '#d7d7d7',
+                    fontSize: '11px',
+                    italic: false
+                },
+                baselineColor: '#f4f4f4'
+            }
+        };
+
+        var chart = new google.visualization.AreaChart(document.getElementById('chart_div3'));
+        $('.table-nav ul li:nth-child(2)').click(function() {
+
+            chart.draw(data, options);
+            console.log('loaded');
+        });
+    }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+    window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <!-- 
+    <script src='js/jquery-sortable.js'></script>
+ -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

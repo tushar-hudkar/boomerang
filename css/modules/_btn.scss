@@ -1,0 +1,20 @@
+
+.btn{@extend %left; width: 1140px; margin-top: 22px; margin-bottom: 60px; 
+
+button.create{@extend %left; width: 151px; height: 43px; background-color: #3498db; border: none; outline: none;
+				border-radius: 4px; font-size: 14px; color: #fff;
+					
+					img{padding-right: 6px;}
+			}
+
+button.export{@extend %right; width: 161px; height: 43px; background-color: #3498db; border: none; outline: none;
+				border-radius: 4px; font-size: 14px; color: #fff;}
+
+button.save{@extend %right; width: 101px; height: 43px; background-color: #569a13; border: none; outline: none;
+				border-radius: 4px; font-size: 14px; color: #fff; margin-right: 7px;}
+
+button.reset{@extend %right; width: 101px; height: 43px; background-color: transparent; border: 1px solid #fd9090; outline: none;
+				border-radius: 4px; font-size: 14px; color: #fe7878; margin-right: 7px;}
+
+
+}

@@ -1,0 +1,167 @@
+/* @extend %left; */
+
+%left {float:left;}
+
+%right {float:right;}
+
+%center {text-align: center;}
+
+%pos-relative {position: relative;}
+
+%pos-absolute {position: absolute;}
+
+%pos-fixed {position: fixed;}
+
+/* background-color: $head-color; */
+
+$Blue : #f90e4d;
+
+$green : #2ce400;
+
+$head-color: aliceblue;
+
+
+
+
+/* @include border-radius(4px);
+@include translateX(-50%); */
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin transform($transforms) {
+	-moz-transform: $transforms;
+	-o-transform: $transforms;
+	-ms-transform: $transforms;
+	-webkit-transform: $transforms;
+	transform: $transforms;
+}
+
+
+@mixin translateY($y) {
+   @include transform(translateY($y));
+}
+
+
+
+%boxsizing {box-sizing:border-box; -ms-box-sizing:border-box; -moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+
+
+
+
+
+
+
+
+
+
+<!--/////////////////////////////////////////////////////////////////-->
+
+
+///COLORS
+
+$lightBlue : #58aee5;
+
+$darkBlue : #296185;
+
+$gray : #bcbcbc;
+
+$grayBack :#f7f8f9;
+
+$footerFont :#929292;
+
+$low:#ff8416;
+
+$normal:#72d36f;
+
+$high:#db384c;
+
+$font:#333;
+
+$lightGray : #999;
+
+//COLORS ON INTERACTION PAGE
+
+$yellow : #f9b700;
+$green:#b6c710;
+$lighterGray : #8f8f8f;
+$border:#b7b7b7;
+
+/// input sugar colors
+
+$yellowInput: #ff8416;
+$greenInput :#72d36f;
+$redInput :#db384c;
+
+
+//COLORS IN PRESCRIPTION
+
+$red : #e9510a;
+
+/*
+
+Mixins
+
+*/
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin transform($transforms) {
+	-moz-transform: $transforms;
+	-o-transform: $transforms;
+	-ms-transform: $transforms;
+	-webkit-transform: $transforms;
+	transform: $transforms;
+}
+
+@mixin translateY($y) {
+   @include transform(translateY($y));
+}
+
+
+@mixin translateX($x) {
+   @include transform(translateX($x));
+}
+/*
+
+Placeholders
+
+*/
+
+%reg-roboto 
+{
+
+	font-family: 'Roboto', sans-serif; 
+}
+
+%bold {font-weight:700;}
+
+%medium {font-weight:500;}
+
+%light {font-weight:300;}
+
+%capital {text-transform: uppercase;}
+
+%left {float:left;}
+
+%center {text-align: center;}
+
+%right {float:right;}
+
+%pos-relative {position: relative;}
+
+%pos-absolute {position: absolute;}
+
+%pos-fixed {position: fixed;}
+
+%overflow {overflow:hidden;}
+

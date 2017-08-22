@@ -1,0 +1,68 @@
+
+.graph{@extend %left; width: 1140px; margin: 40px 0;
+
+.revenue{@extend %left; width: 547px; border: 1px solid #ccddea; border-radius: 6px;
+			background-color: #fefefe;  
+
+			-webkit-box-shadow: 0px 0px 5px 1px rgba(240,242,243,1);
+-moz-box-shadow: 0px 0px 5px 1px rgba(240,242,243,1);
+box-shadow: 0px 0px 5px 1px rgba(240,242,243,1);
+	
+	#chart_div, #chart_div2 {@extend %left; width: 100%; padding-bottom: 6px;}
+
+	.graph-pin{@extend %left; width: 547px;
+			.graph-head{@extend %left; width: 482px; 
+
+			h3{@extend %left; font-size: 24px; color: #1f3a4e; font-weight: 400; line-height: 64px;
+					  padding-left: 24px;}
+
+
+			.amount{@extend %right; padding: 20px 10px; margin-right: 18px;
+			h4{@extend %left; font-size: 24px; color: #64717d; font-weight: 600; border-right: 1px solid #ecf2f6; padding-right: 10px;}
+
+			h5{@extend %left; font-size: 24px; color: #78ae42; font-weight: 400; padding-left: 4px;
+
+					.icon-up-dir{@extend %left; color: #78ae42; font-size: 27px;}
+			}
+
+			}
+
+			}
+
+				.pin{@extend %right; width: 64px; border-left: 1px solid #f5f8fa;
+
+					img{padding: 25px 23px;}
+			}
+
+		}
+
+	.quarter{@extend %left; width: 547px; background-color: rgba(166,194,216,0.1); border-bottom: 1px solid #eff3f7;
+						border-top: 1px solid #eff3f7; height: 49px;
+		.select{@extend %left; margin-left: 24px; padding: 8px 0px;
+			select{@extend %left; width: 120px; height: 32px; border-radius: 4px; font-size: 12px; color: #1f3a4e; opacity: .6; 
+							  padding-left: 6px; background-color: #f9fbfc; outline: none; border: 1px solid #d8e4ec;}
+					}
+
+					.graph-pointer{@extend %right; margin-right: 24px;
+							
+							.overall{@extend %left; margin-right: 12px;
+										p{@extend %left; font-size: 13px; color: #1f3a4e; opacity: .8; line-height: 48px;
+											img{padding-right: 5px;}
+										}
+							}
+
+							.baseline{@extend %left;
+										p{@extend %left; font-size: 13px;  color: #1f3a4e; opacity: .8; line-height: 48px;
+											img{padding-right: 5px;}
+										}
+							}
+					}
+		}
+
+
+}
+
+}
+
+#chart_div3 {@extend %left; width: 100%; padding-bottom: 6px;}
+
